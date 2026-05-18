@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Website</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Nature World</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h2>Explore Nature</h2>
+      <p>Feel the beauty of forests, mountains, and fresh air.</p>
+      <button>Discover More</button>
+    </div>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h3>Forests</h3>
+      <p>Enjoy peaceful green landscapes and wildlife.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mountains</h3>
+      <p>Experience breathtaking mountain views.</p>
+    </div>
+
+    <div class="card">
+      <h3>Waterfalls</h3>
+      <p>Relax with the calming sounds of nature.</p>
+    </div>
+
+  </section>
+
+</body>
+</html>
