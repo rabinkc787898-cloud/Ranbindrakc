@@ -1,142 +1,217 @@
-/* Reset */
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Body */
+/* ===== Background ===== */
 body{
-  font-family: Arial, sans-serif;
-  background: #e8f5e9;
-  color: white;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('IMG_0519.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
 }
 
-/* Header */
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: rgba(0,0,0,0.5);
-  position: fixed;
-  width: 100%;
+/* ===== Navbar ===== */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
 }
 
-header h1{
-  font-size: 30px;
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #9df59d;
 }
 
-nav a{
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 18px;
-  transition: 0.3s;
+nav ul{
+    display: flex;
+    list-style: none;
 }
 
-nav a:hover{
-  color: lightgreen;
+nav ul li{
+    margin-left: 25px;
 }
 
-/* Hero Section */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: #9df59d;
+}
+
+/* ===== Hero Section ===== */
 .hero{
-  height: 100vh;
-
-  /* Background Image */
-  background: url("nature.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Dark Overlay */
-.hero::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0,0.4);
+.hero-content{
+    background: rgba(255,255,255,0.1);
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    max-width: 700px;
 }
 
-.content{
-  position: relative;
-  z-index: 1;
+.hero-content h1{
+    font-size: 55px;
+    margin-bottom: 20px;
 }
 
-.content h2{
-  font-size: 60px;
-  margin-bottom: 20px;
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
-.content p{
-  font-size: 22px;
-  margin-bottom: 20px;
+/* ===== Button ===== */
+.btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #9df59d;
+    color: black;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
-button{
-  padding: 12px 25px;
-  border: none;
-  background: green;
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.btn:hover{
+    background: white;
+    transform: scale(1.05);
 }
 
-button:hover{
-  background: darkgreen;
+/* ===== About Section ===== */
+.about{
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
 }
 
-/* Cards */
-.cards{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 80px 40px;
-  background: #f1f8f4;
+.about-box{
+    width: 100%;
+    max-width: 800px;
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
 }
 
-.card{
-  background: white;
-  color: black;
-  padding: 30px;
-  width: 300px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+.about-box h2{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #9df59d;
 }
 
-/* Contact Section */
+.about-box p{
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ===== Contact Section ===== */
 .contact{
-  padding: 80px 20px;
-  background: #dcedc8;
-  text-align: center;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
 }
 
-.contact h2{
-  color: black;
-  margin-bottom: 30px;
-  font-size: 40px;
+.contact-box{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
 }
 
-form{
-  max-width: 600px;
-  margin: auto;
+.contact-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #9df59d;
+    font-size: 36px;
 }
 
-input,
-textarea{
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
+.contact-box form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box input,
+.contact-box textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder{
+    color: #ddd;
+}
+
+.contact-info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 15px;
+    }
+
+    .hero-content h1{
+        font-size: 38px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+    }
 }
